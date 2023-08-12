@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>about</title>
+</head>
+
+<body>
+    <!---  Global ---header ---->
+    <div class="main">
+        <div class="nav" id="header">
+            <img src="https://previews.123rf.com/images/rizal999/rizal9991803/rizal999180300138/103611480-%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B8%E3%83%AC%E3%83%88%E3%83%AD%E3%83%AD%E3%82%B4%E3%83%90%E3%83%83%E3%82%B8%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%80%81%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B8%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%80%81%E3%82%A2%E3%83%91%E3%83%AC%E3%83%AB%E3%81%A8%E3%83%AD%E3%82%B4%E7%94%A8%E3%81%AB%E8%A8%AD%E8%A8%88.jpg"
+                alt="">
+
+            <div class="nav-2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                     <i class="fa-solid fa-bars" ></i>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h2>About us</h2>
+                <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem libero omnis perferendis,
+                    accusantium tenetur dolore est sit eveniet voluptatibus, rem tempora velit officiis vero cum,
+                    reiciendis consectetur? Maxime, illo reiciendis!</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis, velit voluptas
+                    repellendus accusamus vel sequi placeat. Dolore vitae exercitationem debitis laborum, officiis
+                    tempore sit sunt pariatur maiores praesentium obcaecati?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis, velit voluptas
+                    repellendus accusamus vel sequi placeat. Dolore vitae exercitationem debitis laborum, officiis
+                    tempore sit sunt pariatur maiores praesentium obcaecati?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis, velit voluptas
+                    repellendus accusamus vel sequi placeat. Dolore vitae exercitationem debitis laborum, officiis
+                    tempore sit sunt pariatur maiores praesentium obcaecati?</p>
+                <button>Read me --></button>
+
+
+            </div>
+            <div class="right">
+            </div>
+        </div>
+        <!-- footer.html -->
+
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+    </div>
+
+
+    <script src="ai.html"></script>
+
+
+</body>
+
+</html>

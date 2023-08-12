@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #010712;
+    --secondary-color: #818386;
+    --bg-color: #FCFDFD;
+    --button-color: #3B3636;
+    --h1-color: #3F444C;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #FCFDFD;
+    --secondary-color: #818386;
+    --bg-color: #010712;
+    --button-color: #818386;
+    --h1-color: #FCFDFD;
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 0 40px;
+border-bottom: 3px solid  #daddda;
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+ul li{
+    display: block;
+    padding: 0 20px;
+}
+li a{
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+ .nav-2 i
+{
+    display:none;
+}
+
+img{
+    width: 150px;
+    mix-blend-mode: darken;
+}
+
+.contact{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+}
+
+.left-contact{
+  height: 100%;
+  width: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://media.istockphoto.com/id/1148794296/photo/close-up-image-hand-using-smartphone-with-envelope-email.jpg?s=2048x2048&w=is&k=20&c=ibB6BUe7KSDuS4Fc2nEsu6cXSVb6DdiK8jvbfBJp--4=");
+}
+.right-contact{
+
+    height: 100%;
+    width: 55%;
+    padding: 40px 20px;
+}
+h1, label, button, .description {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+  
+  h1 {
+    color:var(--h1-color);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+  }
+  
+  p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    width: 40vw;
+    margin: 0.25rem 0;
+  }
+  
+  label, .description {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.625rem;
+  }
+  
+  form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+  input, textarea, label {
+    width: 40vw;
+    display: block;
+  }
+  
+  p, placeholder, input, textarea {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: var(--primary-color);
+  }
+  
+  input, textarea {
+    color: var(--primary-color);
+    font-weight: 500;
+    background: var(--bg-color);
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--button-color);
+    color: var(--bg-color);
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input:hover, textarea:hover, button:hover {
+    opacity: 0.5;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+  
+  /* Toggle Switch */
+  
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+  }
+  
+  .description {
+      margin-left: 1.25rem;
+    }
+  
+ 
+  
+  
+  
+  
+  input:checked + .slider {
+    background-color: var(--button-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+
+  
+  
+    
+
+
+
+/*  
+ responsive template  code */
+
+@media (max-width:550px) {
+  
+    .nav{
+        background-color: #dadd;
+         padding: 0 1px;
+         height: 80px;
+         width: 100%;
+    }
+    .contact{
+         flex-direction: column;
+         height: calc(100% - 80px );
+    }
+    a{
+        display: none;
+    }
+
+   .nav-2 i
+{
+    display: block;
+    margin-right: 30px;
+    font-size: 5vw;
+}
+
+    .left-contact{
+        width: 100%;
+     height: 100%;
+       }
+    .right-contact{
+        width: 100%;
+     height: 100%;
+     padding:  20vw;
+     font-size: 5vw;
+       }
+       h1 {
+        font-size: 1.90rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 3vw;
+        font-weight: 300;
+      }
+      input, textarea, button {
+        font-size: 1.65rem;
+      }
+      .description {
+        font-size: 0.3rem;
+        margin-left: 3.4rem;
+      }
+      button {
+        width: 7rem;
+      }
+      .theme-switch-wrapper {
+        width: 120px;
+      }
+      .theme-switch {
+      height: 28px;
+      width: 50px;
+    }
+    
+    .theme-switch input {
+      display:none;
+    }
+   
+    
+    
+}
